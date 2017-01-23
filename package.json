@@ -1,6 +1,6 @@
 {
   "name": "normalize-styled",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0",
   "description": "Normalize.css for your styled-components",
   "main": "dist/index.js",
   "scripts": {
