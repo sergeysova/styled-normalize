@@ -1,0 +1,37 @@
+{
+  "name": "normalize-styled",
+  "version": "1.0.0-rc.1",
+  "description": "Normalize.css for your styled-components",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LestaD/normalize-styled.git"
+  },
+  "keywords": [
+    "styled",
+    "components",
+    "normalize",
+    "css",
+    "react",
+    "jss",
+    "styles",
+    "import",
+    "export"
+  ],
+  "author": "Sergey Sova <i.am@lestad.net> (https://lestad.top)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LestaD/normalize-styled/issues"
+  },
+  "homepage": "https://github.com/LestaD/normalize-styled#readme",
+  "devDependencies": {
+    "styled-components": "^1.3.1"
+  },
+  "peerDependencies": {
+    "react": "15.x",
+    "styled-components": "^1.3.1"
+  }
+}
