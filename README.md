@@ -1,4 +1,4 @@
-# normalize-styled
+# styled-normalize
 
 Single file with normalize.css for your [styled-components](https://styled-components.com/)
 
@@ -8,18 +8,18 @@ Original normalize.css copied from [necolas/normalize.css](https://github.com/ne
 ## Usage
 
 ```bash
-npm install --save normalize-styled styled-components
+npm install --save styled-normalize styled-components
 ```
 
 ### JavaScript
 
 ```javascript
 // ----- styles/index.js
-import normalizeStyled from 'normalize-styled'
+import styledNormalize from 'styled-normalize'
 import { injectGlobal } from 'styled-components'
 
 export default () => injectGlobal`
-  ${normalizeStyled}
+  ${styledNormalize}
 
   body {
     padding: 0;
