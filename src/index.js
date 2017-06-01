@@ -2,7 +2,6 @@ import { css } from 'styled-components'
 
 export default css`
   html {
-    font-family: sans-serif;
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -50,11 +49,6 @@ export default css`
   a {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
-  }
-
-  a:active,
-  a:hover {
-    outline-width: 0;
   }
 
   abbr[title] {
@@ -171,9 +165,7 @@ export default css`
   }
 
   fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
+    padding: 0.35em 0.75em 0.625em;
   }
 
   legend {
