@@ -1,5 +1,7 @@
 import { css } from 'styled-components'
 
+export const version = '7.0.0'
+
 export default css`
   html {
     line-height: 1.15;

@@ -115,3 +115,4 @@ Temporary Items
 .nfs*
 
 # End of https://www.gitignore.io/api/node,windows,osx,linux
+dist

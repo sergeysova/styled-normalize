@@ -4,7 +4,10 @@
   "description": "Normalize.css for your styled-components",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel -d dist src",
+    "prepublish": "npm run build",
+    "postversion": "git push origin master --tags && npm publish"
   },
   "repository": {
     "type": "git",
@@ -28,9 +31,13 @@
   },
   "homepage": "https://github.com/LestaD/styled-normalize#readme",
   "devDependencies": {
-    "styled-components": "^1.3.1"
+    "babel-cli": "^6.24.1",
+    "babel-plugin-styled-components": "^1.1.4",
+    "babel-plugin-transform-es2015-block-scoping": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "styled-components": "^2.0.0"
   },
   "peerDependencies": {
-    "styled-components": "^1.3.1 || ^2.0.0"
+    "styled-components": "^2.0.0"
   }
 }
