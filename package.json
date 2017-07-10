@@ -36,6 +36,7 @@
     "babel-plugin-styled-components": "^1.1.6",
     "babel-plugin-transform-es2015-block-scoping": "^6.24.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-plugin-transform-es2015-template-literals": "^6.22.0",
     "styled-components": "^2.1.0"
   },
   "peerDependencies": {
