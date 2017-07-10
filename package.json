@@ -9,6 +9,7 @@
     "prepublish": "npm run build",
     "postversion": "git push origin master --tags && npm publish"
   },
+  "typings": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LestaD/styled-normalize.git"
