@@ -12,7 +12,7 @@
   "typings": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LestaD/styled-normalize.git"
+    "url": "git+https://github.com/sergeysova/styled-normalize.git"
   },
   "keywords": [
     "styled",
@@ -25,12 +25,12 @@
     "import",
     "export"
   ],
-  "author": "Sergey Sova <i.am@lestad.net> (https://lestad.top)",
+  "author": "Sergey Sova <mail@sergeysova.com> (https://sergeysova.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LestaD/styled-normalize/issues"
+    "url": "https://github.com/sergeysova/styled-normalize/issues"
   },
-  "homepage": "https://github.com/LestaD/styled-normalize#readme",
+  "homepage": "https://github.com/sergeysova/styled-normalize#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-styled-components": "^1.4.0",
