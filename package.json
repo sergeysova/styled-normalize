@@ -32,12 +32,12 @@
   },
   "homepage": "https://github.com/LestaD/styled-normalize#readme",
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-plugin-styled-components": "^1.1.6",
-    "babel-plugin-transform-es2015-block-scoping": "^6.24.1",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-styled-components": "^1.4.0",
+    "babel-plugin-transform-es2015-block-scoping": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-plugin-transform-es2015-template-literals": "^6.22.0",
-    "styled-components": "^2.1.0"
+    "styled-components": "^2.4.0"
   },
   "peerDependencies": {
     "styled-components": "^2.0.0"

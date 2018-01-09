@@ -40,6 +40,16 @@ const render = () => {
 render()
 ```
 
+With named import
+
+```js
+// ES Modules
+import { normalize, version } from 'styled-normalize'
+
+// CommonJS
+const { normalize, version } = require('styled-normalize')
+```
+
 ## ServerSide Rendering
 
 Styled-components supports SSR, you can [read discussion](https://github.com/styled-components/styled-components/issues/386) or [open RURARAR](https://github.com/lestad/rurarar/)

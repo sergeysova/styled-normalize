@@ -2,7 +2,7 @@ import { css } from 'styled-components'
 
 export const version = '7.0.0'
 
-export default css`
+export const normalize = css`
   html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
@@ -235,3 +235,5 @@ export default css`
     display: none;
   }
 `
+
+export default normalize
