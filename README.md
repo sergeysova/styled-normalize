@@ -2,7 +2,7 @@
 
 Single file with normalize.css for your [styled-components](https://styled-components.com/)
 
-Original normalize.css copied from [necolas/normalize.css](https://github.com/necolas/normalize.css)
+Original normalize.css copied and adapted from [necolas/normalize.css](https://github.com/necolas/normalize.css)
 
 
 ## Usage
