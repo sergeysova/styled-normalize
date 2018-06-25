@@ -1,14 +1,14 @@
 # styled-normalize
 
-Single file with normalize.css for your [styled-components](https://styled-components.com/)
+Normalize file for [styled-components](https://styled-components.com/) CSS-in-JS library.
 
-Original normalize.css copied and adapted from [necolas/normalize.css](https://github.com/necolas/normalize.css)
+The original `normalize.css` is pulled from [necolas/normalize.css](https://github.com/necolas/normalize.css), and parsed into styled ready format.
 
 
 ## Usage
 
-```bash
-npm install --save styled-normalize styled-components
+```sh
+npm install --save styled-normalize
 ```
 
 ### JavaScript
@@ -18,29 +18,18 @@ npm install --save styled-normalize styled-components
 import styledNormalize from 'styled-normalize'
 import { injectGlobal } from 'styled-components'
 
-export default () => injectGlobal`
+injectGlobal`
   ${styledNormalize}
 
+  // You can continue writing global styles
   body {
     padding: 0;
     background-color: black;
   }
 `
-
-// ----- client.js
-// ... imports
-import baseStyles from './styles/index'
-
-const render = () => {
-  baseStyles()
-
-  ReactDOM.render(<AppContainer />, document.getElementById('app-root'))
-}
-
-render()
 ```
 
-With named import
+You can also use named imports:
 
 ```js
 // ES Modules
@@ -48,8 +37,11 @@ import { normalize, version } from 'styled-normalize'
 
 // CommonJS
 const { normalize, version } = require('styled-normalize')
+
+assert(version)
 ```
 
-## ServerSide Rendering
+## License
 
-Styled-components supports SSR, you can [read discussion](https://github.com/styled-components/styled-components/issues/386) or [open RURARAR](https://github.com/lestad/rurarar/)
+The [MIT License](LICENSE)
+
