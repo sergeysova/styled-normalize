@@ -1,7 +1,10 @@
 {
+  "presets": [
+    ["@babel/env", {
+      "modules": "commonjs"
+    }]
+  ],
   "plugins": [
-    "transform-es2015-modules-commonjs",
-    "transform-es2015-block-scoping",
-    "transform-es2015-template-literals"
+    "styled-components"
   ]
 }
