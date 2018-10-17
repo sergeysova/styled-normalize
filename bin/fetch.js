@@ -12,13 +12,17 @@ const normalizeVersion = normalizePackage.version
 const cleanedContent = normalizeContent.replace(cleanRegexp, '').replace(/^\s*\n/gm, '')
 
 const resultContent = `
-import { css } from 'styled-components'
+import { css, createGlobalStyle } from 'styled-components'
 
 export const version = '${normalizeVersion}'
 
 export const normalize = css\`
 ${cleanedContent}
 \`
+
+export const Normalize = createGlobalStyle
+  ? createGlobalStyle\`\${normalize}\`
+  : () => null
 
 export default normalize
 `
