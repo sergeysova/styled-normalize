@@ -11,24 +11,6 @@ The original `normalize.css` is pulled from [necolas/normalize.css](https://gith
 npm install --save styled-normalize
 ```
 
-### styled-components v2 and v3
-
-```js
-// ----- styles/index.js
-import styledNormalize from 'styled-normalize'
-import { injectGlobal } from 'styled-components'
-
-injectGlobal`
-  ${styledNormalize}
-
-  // You can continue writing global styles
-  body {
-    padding: 0;
-    background-color: black;
-  }
-`
-```
-
 ### styled-components v4
 
 styled-components [createGlobalStyle documentation](https://www.styled-components.com/docs/api#createglobalstyle)
@@ -51,6 +33,24 @@ const Root = () => (
 ```
 
 > For older version of styled-components this API renders to `null`
+
+### styled-components v2 and v3
+
+```js
+// ----- styles/index.js
+import styledNormalize from 'styled-normalize'
+import { injectGlobal } from 'styled-components'
+
+injectGlobal`
+  ${styledNormalize}
+
+  // You can continue writing global styles
+  body {
+    padding: 0;
+    background-color: black;
+  }
+`
+```
 
 You can also use named imports:
 
