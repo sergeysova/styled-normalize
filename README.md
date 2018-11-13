@@ -11,6 +11,7 @@ The original `normalize.css` is pulled from [necolas/normalize.css](https://gith
 npm install --save styled-normalize
 ```
 
+### styled-components v4
 
 styled-components [createGlobalStyle documentation](https://www.styled-components.com/docs/api#createglobalstyle)
 
@@ -61,6 +62,16 @@ const { normalize, Normalize } = require('styled-normalize')
 injectGlobal` ${normalize} `
 <Normalize />
 ```
+
+### styled-components v3
+
+If you want to use `styled-normalize` with `styled-components@v3` you should use `prev` npm tag.
+
+```bash
+npm install styled-normalize@prev
+```
+
+> v3 don't supports `createGlobalStyle` API.
 
 ## Version
 
