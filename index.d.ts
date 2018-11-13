@@ -1,9 +1,6 @@
-import { InterpolationValue, GlobalStyleClass, DefaultTheme } from 'styled-components'
-
-export const version: string
+import { InterpolationValue } from 'styled-components'
 
 declare const normalize: InterpolationValue
-declare const Normalize: (() => null) | GlobalStyleClass<{}, DefaultTheme>
 
-export { normalize, Normalize }
+export { normalize }
 export default normalize
