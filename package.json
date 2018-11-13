@@ -5,9 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "prefetch": "node ./bin/fetch.js",
-    "update": "ncu -u normalize.css && npm run prefetch",
+    "update": "npm i normalize.css@latest && npm run prefetch",
     "build": "babel -d dist src",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "typings": "index.d.ts",
   "repository": {
@@ -34,14 +34,14 @@
   "devDependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-env": "^7.1.5",
     "babel-plugin-styled-components": "^1.8.0",
     "normalize.css": "^8.0.0",
-    "npm-check-updates": "^2.14.2",
-    "react": "^16.5.2",
-    "styled-components": "^4.0.0"
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "styled-components": "^4.1.1"
   },
   "peerDependencies": {
-    "styled-components": "^2.0.0 || ^3.3.3 || ^4.0.0"
+    "styled-components": "^4.0.0"
   }
 }
