@@ -1,6 +1,6 @@
 {
   "name": "styled-normalize",
-  "version": "8.0.3",
+  "version": "8.0.4",
   "description": "Normalize.css for styled-components CSS-in-JS library",
   "main": "dist/index.js",
   "scripts": {
