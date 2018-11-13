@@ -8,7 +8,7 @@ const normalizePackage = JSON.parse(fs.readFileSync('./node_modules/normalize.cs
 const normalizeMain = path.join('./node_modules/normalize.css', normalizePackage.main)
 const normalizeContent = fs.readFileSync(normalizeMain, 'utf8')
 
-const cleanedContent = normalizeContent.replace(cleanRegexp, '').replace(/^\s*\n/gm, '')
+const cleanedContent = normalizeContent.replace(cleanRegexp, '').replace(/^\s*\n/gm, '').replace(/\s+$/gm, '')
 
 const resultContent = `
 import { css, createGlobalStyle } from 'styled-components'

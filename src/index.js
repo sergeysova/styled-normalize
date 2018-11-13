@@ -1,11 +1,6 @@
 
 import { css, createGlobalStyle } from 'styled-components'
 
-/**
- * @deprecated
- */
-export const version = '8.0.2'
-
 export const normalize = css`
 html {
   line-height: 1.15;
@@ -13,6 +8,9 @@ html {
 }
 body {
   margin: 0;
+}
+main {
+  display: block;
 }
 h1 {
   font-size: 2em;
@@ -150,11 +148,8 @@ template {
 [hidden] {
   display: none;
 }
-
 `
 
-export const Normalize = createGlobalStyle
-  ? createGlobalStyle`${normalize}`
-  : () => null
+export const Normalize = createGlobalStyle`${normalize}`
 
 export default normalize
