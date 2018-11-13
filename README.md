@@ -11,7 +11,6 @@ The original `normalize.css` is pulled from [necolas/normalize.css](https://gith
 npm install --save styled-normalize
 ```
 
-### styled-components v4
 
 styled-components [createGlobalStyle documentation](https://www.styled-components.com/docs/api#createglobalstyle)
 
@@ -32,9 +31,7 @@ const Root = () => (
 )
 ```
 
-> For older version of styled-components this API renders to `null`
-
-### styled-components v2 and v3
+Also you can use `injectGlobal` API:
 
 ```js
 // ----- styles/index.js
@@ -60,7 +57,16 @@ import { normalize, Normalize } from 'styled-normalize'
 
 // CommonJS
 const { normalize, Normalize } = require('styled-normalize')
+
+injectGlobal` ${normalize} `
+<Normalize />
 ```
+
+## Version
+
+__NO SEMVER!__
+
+Why? Because X.Y numbers in `vX.Y.Z` version matches X.Y in `normalize.css`
 
 ## License
 
