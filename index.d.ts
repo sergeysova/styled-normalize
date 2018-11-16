@@ -1,7 +1,7 @@
-import { InterpolationValue, GlobalStyleClass, DefaultTheme } from 'styled-components'
+import { InterpolationValue, GlobalStyleComponent, DefaultTheme } from 'styled-components'
 
 declare const normalize: InterpolationValue
-declare const Normalize: GlobalStyleClass<{}, DefaultTheme>
+declare const Normalize: GlobalStyleComponent<{}, DefaultTheme>
 
 export { normalize, Normalize }
 export default normalize
