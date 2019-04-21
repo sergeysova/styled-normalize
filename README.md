@@ -37,9 +37,9 @@ Also you can use `injectGlobal` API:
 ```js
 // ----- styles/index.js
 import styledNormalize from 'styled-normalize'
-import { injectGlobal } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   ${styledNormalize}
 
   // You can continue writing global styles
@@ -48,6 +48,8 @@ injectGlobal`
     background-color: black;
   }
 `
+
+<GlobalStyle />
 ```
 
 You can also use named imports:
