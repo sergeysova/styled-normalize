@@ -32,7 +32,7 @@ const Root = () => (
 )
 ```
 
-Also you can use `injectGlobal` API:
+Also you can use `createGlobalStyle` API:
 
 ```js
 // ----- styles/index.js
