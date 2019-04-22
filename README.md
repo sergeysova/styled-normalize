@@ -36,11 +36,11 @@ Also you can use `createGlobalStyle` API:
 
 ```js
 // ----- styles/index.js
-import styledNormalize from 'styled-normalize'
+import { normalize } from 'styled-normalize'
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
-  ${styledNormalize}
+  ${normalize}
 
   // You can continue writing global styles
   body {
@@ -61,7 +61,7 @@ import { normalize, Normalize } from 'styled-normalize'
 // CommonJS
 const { normalize, Normalize } = require('styled-normalize')
 
-injectGlobal` ${normalize} `
+createGlobalStyle` ${normalize} `
 <Normalize />
 ```
 
