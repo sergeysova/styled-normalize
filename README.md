@@ -11,14 +11,16 @@ The original `normalize.css` is pulled from [necolas/normalize.css](https://gith
 npm install --save styled-normalize
 ```
 
+```sh
+yarn add styled-normalize
+```
+
 ### styled-components v4
 
-styled-components [createGlobalStyle documentation](https://www.styled-components.com/docs/api#createglobalstyle)
-
-> This is just usage example
+Use as component:
 
 ```js
-// ----- index.js
+// index.js
 import React from 'react'
 import { Normalize } from 'styled-normalize'
 
@@ -32,14 +34,14 @@ const Root = () => (
 )
 ```
 
-Also you can use `createGlobalStyle` API:
+Also you can use [`createGlobalStyle`](https://www.styled-components.com/docs/api#createglobalstyle) API:
 
 ```js
-// ----- styles/index.js
-import { normalize } from 'styled-normalize'
+// styles/index.js
 import { createGlobalStyle } from 'styled-components'
+import { normalize } from 'styled-normalize'
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   ${normalize}
 
   // You can continue writing global styles
@@ -49,7 +51,19 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-<GlobalStyle />
+// index.js
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+import { GlobalStyle } from './styles'
+import { App } from './app'
+
+ReactDOM.render((
+  <React.Fragment>
+    <GlobalStyle />
+    <App />
+  </React.Fragment>
+), document.querySelector('#root'))
 ```
 
 You can also use named imports:
@@ -60,9 +74,6 @@ import { normalize, Normalize } from 'styled-normalize'
 
 // CommonJS
 const { normalize, Normalize } = require('styled-normalize')
-
-createGlobalStyle` ${normalize} `
-<Normalize />
 ```
 
 ### styled-components v3
