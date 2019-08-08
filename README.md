@@ -17,6 +17,8 @@ yarn add styled-normalize
 
 ### styled-components v4
 
+Package exported `normalize` and `Normalize`. `Normalize` is a component with global styles. `normalize` is a css-normalize content to interpolate into styled component.
+
 Use as component:
 
 ```js
