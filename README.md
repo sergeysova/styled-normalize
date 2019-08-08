@@ -22,6 +22,7 @@ Use as component:
 ```js
 // index.js
 import React from 'react'
+import ReactDOM from 'react-dom'
 import { Normalize } from 'styled-normalize'
 
 import { App } from './app'
@@ -32,6 +33,8 @@ const Root = () => (
     <App />
   </React.Fragment>
 )
+
+ReactDOM.render(<Root />, document.querySelector('#root'))
 ```
 
 Also you can use [`createGlobalStyle`](https://www.styled-components.com/docs/api#createglobalstyle) API:
@@ -44,7 +47,7 @@ import { normalize } from 'styled-normalize'
 export const GlobalStyle = createGlobalStyle`
   ${normalize}
 
-  // You can continue writing global styles
+  // You can continue writing global styles here
   body {
     padding: 0;
     background-color: black;
@@ -58,12 +61,14 @@ import ReactDOM from 'react-dom'
 import { GlobalStyle } from './styles'
 import { App } from './app'
 
-ReactDOM.render((
+const Root = () => (
   <React.Fragment>
     <GlobalStyle />
     <App />
   </React.Fragment>
-), document.querySelector('#root'))
+)
+
+ReactDOM.render(<Root />, document.querySelector('#root'))
 ```
 
 You can also use named imports:
