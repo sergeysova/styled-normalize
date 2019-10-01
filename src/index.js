@@ -150,6 +150,6 @@ template {
 }
 `
 
-export const Normalize = createGlobalStyle`${normalize}`
+export const Normalize = createGlobalStyle(normalize);
 
 export default normalize
