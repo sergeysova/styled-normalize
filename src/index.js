@@ -151,5 +151,6 @@ template {
 `
 
 export const Normalize = createGlobalStyle(normalize);
+Normalize.displayName = 'Normalize';
 
 export default normalize
